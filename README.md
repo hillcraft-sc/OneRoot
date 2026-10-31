@@ -4,7 +4,7 @@
 
 <p align="center">A fast, native file manager for macOS, built for real file work.</p>
 
-<p align="center"><a href="https://github.com/hillcraft-sc/OneRoot/releases/latest"><b>Download the latest release</b></a></p>
+<p align="center"><a href="https://github.com/hillcraft-sc/OneRoot/releases/latest"><b>Download the latest release</b></a> · <a href="https://oneroot.hillcraft-sc.com">Website</a> · <a href="https://oneroot.hillcraft-sc.com/support.html">Support</a></p>
 
 ---
 
@@ -44,7 +44,7 @@ updates keep the permission.
 
 ## Feedback
 
-Found a bug or have an idea? [Open an issue](https://github.com/hillcraft-sc/OneRoot/issues).
+Found a bug or have an idea? [Open an issue](https://github.com/hillcraft-sc/OneRoot/issues), or email admin@hillcraft-sc.com. Help with installing and setup is on the [Support page](https://oneroot.hillcraft-sc.com/support.html).
 
 ## License
 
@@ -52,7 +52,7 @@ OneRoot is free for **noncommercial** use: personal use, and use by
 charities, schools, public research, and government organizations. It may
 not be redistributed, modified, or used commercially without a separate
 license. See [LICENSE](LICENSE) (PolyForm Strict 1.0.0); for commercial use,
-contact Eric Hebert. OneRoot is not open source, and this repository holds
+email admin@hillcraft-sc.com. OneRoot is not open source, and this repository holds
 releases only.
 
 © 2026 Eric Hebert. "OneRoot" and its icon are not licensed for others' use.
