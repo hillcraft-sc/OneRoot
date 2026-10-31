@@ -1,0 +1,19 @@
+Installing OneRoot
+===================
+
+1. Open OneRoot.dmg (just double-click it).
+2. Drag OneRoot onto the Applications folder in the window that opens.
+3. Open OneRoot from your Applications folder.
+
+The first time, macOS asks whether you want to open an app downloaded
+from the internet. Click Open. OneRoot is signed and checked by Apple,
+so that's the only question you'll get.
+
+You can eject the OneRoot disk afterwards and throw away the .dmg.
+
+
+One more thing: OneRoot needs Full Disk Access to browse all your
+files, just like Finder has. On first launch it shows you how to turn
+it on: System Settings > Privacy & Security > Full Disk Access, switch
+on OneRoot, then relaunch it. You only do this once; updates keep the
+permission.
