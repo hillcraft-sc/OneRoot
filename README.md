@@ -2,14 +2,14 @@
 
 <h1 align="center">OneRoot</h1>
 
-<p align="center">A file manager for macOS that feels familiar if you're coming from Windows.</p>
+<p align="center">A fast, native file manager for macOS, built for real file work.</p>
 
 <p align="center"><a href="https://github.com/hillcraft-sc/OneRoot/releases/latest"><b>Download the latest release</b></a></p>
 
 ---
 
-OneRoot gives you what File Explorer taught you to expect, built natively for
-the Mac:
+OneRoot keeps browsing calm and familiar, and puts the power tools one click
+away when you need them:
 
 - **Tabs** that remember where you were, and **multiple windows**
 - A **folder tree** rooted where you're working, next to a sortable,
@@ -25,7 +25,7 @@ the Mac:
   documents, batch rename, compress and extract
 - **Visualize** what's using your storage
 - Network shares, external drives, iCloud Drive and other cloud folders
-- Light and dark themes, and a built-in Help with a *Coming from Windows* guide
+- Light and dark themes, and a searchable built-in Help
 
 ## Install
 
