@@ -17,7 +17,11 @@ away when you need them:
 - **Breadcrumbs** you can click, or type a path straight into
 - An **Inspector** with a large preview, details, permissions, and tags
 - **Cut, copy, paste**, with progress, Cancel, and **Undo**
-- **Dual Pane**: two folders side by side, F5/F6 to copy or move between them
+- **Dual Pane**: two folders side by side, F5/F6 to copy or move between
+  them, and **Compare Panes** to see what differs and copy one way
+- **Merge folders**, one question for many name conflicts, and Replace that
+  goes to the Trash so it can be undone
+- **Verify copies** byte for byte, and **Find Duplicates** to free space
 - **Workspaces**: one place for a project's folders, wherever they live
 - **Search** that filters the current folder or searches everything, with
   name, kind, date, size, tag, and content filters
