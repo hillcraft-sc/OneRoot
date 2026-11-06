@@ -2,7 +2,7 @@
 
 <h1 align="center">OneRoot</h1>
 
-<p align="center">A fast, native file manager for macOS, built for real file work.</p>
+<p align="center">A fast, native file manager for macOS and Linux, built for real file work.</p>
 
 <p align="center"><a href="https://github.com/hillcraft-sc/OneRoot/releases/latest"><b>Download the latest release</b></a> · <a href="https://oneroot.hillcraft-sc.com">Website</a> · <a href="https://oneroot.hillcraft-sc.com/support.html">Support</a></p>
 
@@ -28,10 +28,10 @@ away when you need them:
 - **Quick Actions**: resize and convert images, combine into PDF, convert
   documents, batch rename, compress and extract
 - **Visualize** what's using your storage
-- Network shares, external drives, iCloud Drive and other cloud folders
-- Light and dark themes, and a searchable built-in Help
+- Network shares, external drives, iCloud Drive and other cloud folders (macOS)
+- Light and dark themes, and a searchable built-in Help (macOS)
 
-## Install
+## Install on macOS
 
 1. Download `OneRoot-x.y.z.dmg` from [Releases](https://github.com/hillcraft-sc/OneRoot/releases/latest).
 2. Open it and drag **OneRoot** onto the **Applications** folder.
@@ -45,6 +45,15 @@ needs to browse all your files the way Finder can. You only do this once;
 updates keep the permission.
 
 **Requires** macOS 14 Sonoma or later, on Apple silicon or Intel.
+
+## Install on Linux
+
+OneRoot for Linux is a GTK 4 / libadwaita app for x86_64 and aarch64.
+
+1. Download `OneRoot-x.y.z-linux-x86_64.tar.gz` (or `-aarch64`) from [Releases](https://github.com/hillcraft-sc/OneRoot/releases/latest).
+2. Unpack it and run `./oneroot`. The archive also holds a desktop entry, AppStream metadata and the icon, if you want to install it system-wide.
+
+**Requires** GTK 4 and libadwaita 1.5 or later (Debian 13, Ubuntu 24.04, Fedora 40 or Arch and newer), plus libxml2, libcurl and `bsdtar` (libarchive) for Compress and Extract. Each tarball has a matching `.sha256` file. The Linux version is newer than the Mac one and doesn't have every Mac feature yet.
 
 ## Feedback
 
