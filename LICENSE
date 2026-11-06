@@ -1,5 +1,9 @@
 Required Notice: Copyright (c) 2026 Eric Hebert
 
+## Additional Permission for Flathub
+
+In addition to the license below, the licensor permits Flathub (flathub.org), its operators, and the infrastructure that builds, hosts, and mirrors it to build the software from the licensor's unmodified source code or official release files, to package it as a Flatpak with only the changes needed to build, package, and sandbox it, and to distribute that package through Flathub free of charge. Everyone who gets the software this way gets it under the PolyForm Strict License 1.0.0 below. This permission covers no other distribution, and the licensor may withdraw it for future releases.
+
 # PolyForm Strict License 1.0.0
 
 <https://polyformproject.org/licenses/strict/1.0.0>
