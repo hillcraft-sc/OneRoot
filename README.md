@@ -2,7 +2,7 @@
 
 <h1 align="center">OneRoot</h1>
 
-<p align="center">A fast, native file manager for macOS and Linux, built for real file work.</p>
+<p align="center">A fast, native file manager for macOS, built for real file work. (A Linux prototype is available too.)</p>
 
 <p align="center"><a href="https://github.com/hillcraft-sc/OneRoot/releases/latest"><b>Download the latest release</b></a> · <a href="https://oneroot.hillcraft-sc.com">Website</a> · <a href="https://oneroot.hillcraft-sc.com/support.html">Support</a></p>
 
@@ -28,8 +28,8 @@ away when you need them:
 - **Quick Actions**: resize and convert images, combine into PDF, convert
   documents, batch rename, compress and extract
 - **Visualize** what's using your storage
-- Network shares, external drives, iCloud Drive and other cloud folders (macOS)
-- Light and dark themes, and a searchable built-in Help (macOS)
+- Network shares, external drives, iCloud Drive and other cloud folders
+- Light and dark themes, and a searchable built-in Help
 
 ## Install on macOS
 
@@ -46,15 +46,9 @@ updates keep the permission.
 
 **Requires** macOS 14 Sonoma or later, on Apple silicon or Intel.
 
-## Install on Linux
+## OneRoot for Linux (early prototype)
 
-OneRoot for Linux is a GTK 4 / libadwaita app for x86_64 and aarch64. Download the file for your system from [Releases](https://github.com/hillcraft-sc/OneRoot/releases/latest):
-
-- **Debian, Ubuntu:** `sudo apt install ./oneroot_x.y.z_amd64.deb` (or `_arm64.deb`)
-- **Fedora:** `sudo dnf install ./oneroot-x.y.z-1.x86_64.rpm` (or `.aarch64.rpm`)
-- **Arch and anything else:** unpack `OneRoot-x.y.z-linux-x86_64.tar.gz` (or `-aarch64`), then run `./install.sh` inside it. That installs OneRoot under `~/.local`; use `sudo ./install.sh --system` for everyone, and `./install.sh --uninstall` to remove it. You can also just run `./oneroot` from the folder.
-
-**Requires** GTK 4, libadwaita 1.7 or later and GtkSourceView 5 (Debian 13, Ubuntu 25.04, Fedora 42 or Arch and newer; Ubuntu 24.04 LTS and Debian 12 are too old), plus libxml2, libcurl and `bsdtar` (libarchive) for Compress and Extract. The packages install these for you. Every file has a matching `.sha256`. The Linux version is newer than the Mac one and doesn't have every Mac feature yet.
+**OneRoot for Linux 0.1.0 is a prototype, not the finished app.** It has far fewer features than the Mac version (no Dual Pane, Quick Actions, Visualize or Settings window yet), and a finished version is coming soon. The prototype builds for x86_64 and aarch64 are on their own pre-release, [OneRoot for Linux 0.1.0](https://github.com/hillcraft-sc/OneRoot/releases/tag/linux-v0.1.0), with `.deb`, `.rpm` and tarball downloads, install steps, and the full list of what works and what doesn't.
 
 ## Feedback
 
