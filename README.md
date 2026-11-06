@@ -48,12 +48,13 @@ updates keep the permission.
 
 ## Install on Linux
 
-OneRoot for Linux is a GTK 4 / libadwaita app for x86_64 and aarch64.
+OneRoot for Linux is a GTK 4 / libadwaita app for x86_64 and aarch64. Download the file for your system from [Releases](https://github.com/hillcraft-sc/OneRoot/releases/latest):
 
-1. Download `OneRoot-x.y.z-linux-x86_64.tar.gz` (or `-aarch64`) from [Releases](https://github.com/hillcraft-sc/OneRoot/releases/latest).
-2. Unpack it and run `./oneroot`. The archive also holds a desktop entry, AppStream metadata and the icon, if you want to install it system-wide.
+- **Debian, Ubuntu:** `sudo apt install ./oneroot_x.y.z_amd64.deb` (or `_arm64.deb`)
+- **Fedora:** `sudo dnf install ./oneroot-x.y.z-1.x86_64.rpm` (or `.aarch64.rpm`)
+- **Arch and anything else:** unpack `OneRoot-x.y.z-linux-x86_64.tar.gz` (or `-aarch64`), then run `./install.sh` inside it. That installs OneRoot under `~/.local`; use `sudo ./install.sh --system` for everyone, and `./install.sh --uninstall` to remove it. You can also just run `./oneroot` from the folder.
 
-**Requires** GTK 4 and libadwaita 1.5 or later (Debian 13, Ubuntu 24.04, Fedora 40 or Arch and newer), plus libxml2, libcurl and `bsdtar` (libarchive) for Compress and Extract. Each tarball has a matching `.sha256` file. The Linux version is newer than the Mac one and doesn't have every Mac feature yet.
+**Requires** GTK 4, libadwaita 1.7 or later and GtkSourceView 5 (Debian 13, Ubuntu 25.04, Fedora 42 or Arch and newer; Ubuntu 24.04 LTS and Debian 12 are too old), plus libxml2, libcurl and `bsdtar` (libarchive) for Compress and Extract. The packages install these for you. Every file has a matching `.sha256`. The Linux version is newer than the Mac one and doesn't have every Mac feature yet.
 
 ## Feedback
 
