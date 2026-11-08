@@ -1,0 +1,12 @@
+# L5: Advanced Search menu (Saved Queries, Workspace, Terminal command) and Export.
+sh mkdir -p Documents/dups && cd Documents/dups && echo hi > a.txt && echo yo > b.txt
+cd /tmp/oneroot-ui-home/Documents
+key ctrl+shift+f
+sleep 2
+type txt
+key Return
+sleep 2
+shot results
+click 697 27
+sleep 1
+shot menu

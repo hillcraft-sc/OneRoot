@@ -1,0 +1,56 @@
+# Flatpak manifest, built and run locally on aarch64 (not submitted to Flathub yet;
+# see Linux/packaging/README.md). Repackages the prebuilt, statically linked release
+# tarball; update the two sha256 values from the release's .sha256 files per version.
+app-id: com.hillcraft_sc.OneRoot
+runtime: org.gnome.Platform
+runtime-version: '51'
+sdk: org.gnome.Sdk
+command: oneroot
+finish-args:
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  - --filesystem=host          # a file manager must see the user's files
+  - --talk-name=org.freedesktop.Flatpak   # Open in Terminal / host apps
+  - --system-talk-name=org.freedesktop.UDisks2
+  - --talk-name=org.gtk.vfs.*
+  - --talk-name=org.freedesktop.secrets
+modules:
+  # The release binary links libxml2.so.2 (Foundation's XML); the GNOME runtime
+  # now ships libxml2.so.16, so bundle the 2.13 series.
+  - name: libxml2
+    buildsystem: autotools
+    config-opts:
+      - --without-python
+      - --without-icu
+      - --disable-static
+    cleanup:
+      - /bin
+      - /include
+      - /lib/*.la
+      - /lib/cmake
+      - /lib/pkgconfig
+      - /share
+    sources:
+      - type: archive
+        url: https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.9.tar.xz
+        sha256: a2c9ae7b770da34860050c309f903221c67830c86e4a7e760692b803df95143a
+  - name: oneroot
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 oneroot /app/bin/oneroot
+      - install -Dm644 com.hillcraft_sc.OneRoot.desktop -t /app/share/applications
+      - install -Dm644 com.hillcraft_sc.OneRoot.metainfo.xml -t /app/share/metainfo
+      - install -Dm644 com.hillcraft_sc.OneRoot.png /app/share/icons/hicolor/256x256/apps/com.hillcraft_sc.OneRoot.png
+    sources:
+      - type: archive
+        url: https://github.com/hillcraft-sc/OneRoot/releases/download/linux-v0.2.0/OneRoot-0.2.0-linux-x86_64.tar.gz
+        sha256: 1af82c027bf07d166c83533f7f747c11d9a1d6a0324423cb36f948155e42e96a
+        strip-components: 1
+        only-arches: [x86_64]
+      - type: archive
+        url: https://github.com/hillcraft-sc/OneRoot/releases/download/linux-v0.2.0/OneRoot-0.2.0-linux-aarch64.tar.gz
+        sha256: 4f360f27e4ed3a6ecaf83bc46eacd1245e1ad00bcf8b8c9ee56b38a7e81395d9
+        strip-components: 1
+        only-arches: [aarch64]

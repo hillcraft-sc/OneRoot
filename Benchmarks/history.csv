@@ -1,0 +1,3 @@
+date,version,commit,mac,"List 50,000 files","List 50,000 with Spotlight dates","Open a 50,000-file folder","Sort 50,000 by size","Filter 50,000 by name","Flat view of 20,000 files","Compare two 20,000-file trees","Find duplicates in 40,000 files"
+2026-11-01,2.2.0,59c3133,"Mac16,7",2.859,6.986,2.811,0.018,0.024,2.813,1.108,5.781
+2026-11-01,2.3.0,b98d60d,"Mac16,7",2.777,6.880,2.875,0.017,0.024,2.732,1.082,5.595

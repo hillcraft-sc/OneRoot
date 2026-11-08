@@ -1,0 +1,17 @@
+# L2: Warn before closing the last tab; the terminal command in Settings.
+cd /tmp/oneroot-ui-home
+key ctrl+w
+sleep 1
+shot close-last-tab-warning
+key Escape
+sleep 1
+shot still-open
+key ctrl+comma
+sleep 1
+click 906 72
+sleep 1
+click 600 227
+type no-such-term
+key Return
+sleep 1
+shot terminal-missing

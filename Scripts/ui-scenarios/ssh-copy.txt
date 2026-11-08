@@ -1,0 +1,22 @@
+# L8: Copy via SSH (needs sshd on localhost with user sshtest / pw12345 and localhost in known_hosts; see docs/LINUX-DEV.md).
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+click 560 178
+sleep 1
+click 1258 28
+sleep 1
+shot menu
+click 1184 220
+sleep 2
+shot dialog
+type localhost
+click 700 379
+key ctrl+a
+type sshtest
+click 700 538
+type pw12345
+shot filled
+click 790 667
+sleep 4
+shot after-copy
+sh ls -l /home/sshtest/notes.txt > /tmp/oneroot-ssh-result.txt 2>&1; cat /tmp/oneroot-ssh-result.txt

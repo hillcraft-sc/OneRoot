@@ -1,0 +1,7 @@
+# L4: Find Duplicates window and the Visualize panel.
+sh mkdir -p Documents/dups/sub && cd Documents/dups && head -c 50000 /dev/urandom > a.bin && cp a.bin b.bin && cp a.bin sub/c.bin && head -c 9000 /dev/urandom > d.dat && cp d.dat sub/e.dat && echo unique > u.txt
+cd /tmp/oneroot-ui-home/Documents/dups
+sleep 1
+key ctrl+shift+d
+sleep 3
+shot duplicates

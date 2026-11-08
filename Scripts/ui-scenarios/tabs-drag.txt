@@ -1,0 +1,11 @@
+# Drag a tab to reorder it.
+cd /tmp/oneroot-ui-home/Documents
+key ctrl+t
+cd /tmp/oneroot-ui-home/Pictures
+key ctrl+t
+cd /tmp/oneroot-ui-home/Projects
+sleep 1
+shot before
+drag 200 67 900 67 0.3
+sleep 1
+shot after

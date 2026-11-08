@@ -1,0 +1,27 @@
+# L3: Dual Pane toggle, then Compare Panes with a copy preview.
+sh mkdir -p cmp/A/sub cmp/B/sub && cd cmp && echo old > A/same.txt && cp A/same.txt B/ && echo a > A/only-a.txt && echo b > B/only-b.txt && echo 1 > A/newer.txt && echo 22 > B/newer.txt && touch -d '2020-01-01' A/newer.txt && echo x > A/sub/in.txt
+cd /tmp/oneroot-ui-home/cmp/A
+shot single
+key ctrl+backslash
+sleep 1
+shot split
+click 1000 400
+cd /tmp/oneroot-ui-home/cmp/B
+sleep 1
+shot two-folders
+key ctrl+alt+backslash
+sleep 2
+shot compared
+click 885 131
+sleep 1
+shot preview
+key Return
+sleep 3
+shot after-copy
+sh test -f cmp/B/only-a.txt && echo "copied only-a.txt" ; test -f cmp/B/newer.txt && cat cmp/B/newer.txt
+click 1048 131
+sleep 1
+shot done
+key ctrl+backslash
+sleep 1
+shot single-again

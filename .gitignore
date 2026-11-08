@@ -1,0 +1,14 @@
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+.DS_Store
+
+# SwiftPM (OneRootCore, Package.swift)
+.build/
+.swiftpm/
+
+# Local backups and archive output
+CLAUDE.md.bak
+OneRoot 20*/

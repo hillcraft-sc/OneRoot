@@ -1,0 +1,15 @@
+# Between Dates and Regex Suggestions.
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+key ctrl+f
+sleep 1
+shot filterbar
+click 1110 155
+sleep 0.8
+shot add-filter
+click 1110 239
+sleep 0.8
+shot date-editor
+click 1008 412
+sleep 0.8
+shot between

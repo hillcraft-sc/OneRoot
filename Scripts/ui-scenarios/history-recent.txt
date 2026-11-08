@@ -1,0 +1,10 @@
+cd /tmp/oneroot-ui-home/Documents
+cd /tmp/oneroot-ui-home/Pictures
+cd /tmp/oneroot-ui-home/Projects
+sleep 1
+click 1258 27
+sleep 0.8
+shot menu
+click 1196 188
+sleep 1
+shot recent-popover

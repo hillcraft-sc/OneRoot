@@ -46,9 +46,9 @@ updates keep the permission.
 
 **Requires** macOS 14 Sonoma or later, on Apple silicon or Intel.
 
-## OneRoot for Linux (early prototype)
+## OneRoot for Linux (early release)
 
-**OneRoot for Linux 0.1.0 is a prototype, not the finished app.** It has far fewer features than the Mac version (no Dual Pane, Quick Actions, Visualize or Settings window yet), and a finished version is coming soon. The prototype builds for x86_64 and aarch64 are on their own pre-release, [OneRoot for Linux 0.1.0](https://github.com/hillcraft-sc/OneRoot/releases/tag/linux-v0.1.0), with `.deb`, `.rpm` and tarball downloads, install steps, and the full list of what works and what doesn't.
+**OneRoot for Linux 0.2.0 is an early release, still a prototype.** It has most of what the Mac version does (Dual Pane, Quick Actions, Workspaces, Visualize, themes, Settings), but expect rough edges, and no Mac-only features such as iCloud or Touch ID. The builds for x86_64 and aarch64 are on their own pre-release, [OneRoot for Linux 0.2.0](https://github.com/hillcraft-sc/OneRoot/releases/tag/linux-v0.2.0), with `.deb`, `.rpm` and tarball downloads, install steps, and the full list of what works and what doesn't.
 
 ## Feedback
 
@@ -56,11 +56,12 @@ Found a bug or have an idea? [Open an issue](https://github.com/hillcraft-sc/One
 
 ## License
 
-OneRoot is free for **noncommercial** use: personal use, and use by
-charities, schools, public research, and government organizations. It may
-not be redistributed, modified, or used commercially without a separate
-license. See [LICENSE](LICENSE) (PolyForm Strict 1.0.0); for commercial use,
-email admin@hillcraft-sc.com. OneRoot is not open source, and this repository holds
-releases only.
+OneRoot is free software under the [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.html).
+The source is in this repository (a snapshot published with each release).
+The "OneRoot" name and icon are **not** covered by the GPL and may not be used
+for modified versions: see [TRADEMARKS.md](TRADEMARKS.md). Contributing:
+[CONTRIBUTING.md](CONTRIBUTING.md) (DCO sign-off). Building from source and
+the developer notes: [DEVELOPMENT.md](DEVELOPMENT.md). Security reports:
+[SECURITY.md](SECURITY.md).
 
-© 2026 Eric Hebert. "OneRoot" and its icon are not licensed for others' use.
+© 2026 Eric Hebert.

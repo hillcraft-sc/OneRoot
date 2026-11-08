@@ -1,0 +1,12 @@
+# Network window: a favorite (with a delete button) above the announced servers; closing it must not open Connect to Server; then Ctrl+K shows the Add to Favorites switch.
+pre mkdir -p .config && J=$(printf '[{"id":"11111111-1111-1111-1111-111111111111","name":"192.168.1.20","url":"smb://192.168.1.20/timemachine"},{"id":"22222222-2222-2222-2222-222222222222","name":"Office NAS","url":"smb://office-nas.local/"}]' | base64 -w0) && printf '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n<plist version="1.0"><dict><key>com.oneroot.savedServers</key><data>%s</data></dict></plist>\n' "$J" > .config/OneRootLinux.plist
+sleep 1
+key ctrl+shift+k
+sleep 3
+shot network
+key Escape
+sleep 1.5
+shot after-close
+key ctrl+k
+sleep 1.5
+shot connect

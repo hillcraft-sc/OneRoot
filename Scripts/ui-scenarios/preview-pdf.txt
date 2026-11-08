@@ -1,0 +1,13 @@
+# PDF first page in the Inspector and Quick Look; arrows step the list.
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+click 520 306
+sleep 1.5
+shot inspector
+key space
+sleep 1.5
+shot quicklook
+key Up
+sleep 1.5
+shot up
+key Escape

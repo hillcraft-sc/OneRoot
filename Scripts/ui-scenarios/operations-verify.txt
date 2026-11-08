@@ -1,0 +1,18 @@
+# L1: Verify copies (copy to another filesystem, /dev/shm, with the option on).
+env ONEROOT_TEST_COPY_DELAY_MS=1
+sh mkdir -p /dev/shm/oneroot-verify && rm -rf /dev/shm/oneroot-verify/* && mkdir -p Documents/many && cd Documents/many && head -c 20000000 /dev/zero | split -b 2000 -a 5 - f
+key ctrl+shift+o
+sleep 1
+shot panel-empty
+click 30 667
+cd /tmp/oneroot-ui-home/Documents
+click 520 136
+key ctrl+c
+cd /dev/shm/oneroot-verify
+key ctrl+v
+sleep 12
+sh echo "at12s: $(grep -c GtkPaned /tmp/oneroot-ui.log)"
+shot copying
+sleep 14
+sh echo "at26s: $(grep -c GtkPaned /tmp/oneroot-ui.log)"
+shot later

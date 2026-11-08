@@ -1,0 +1,15 @@
+# L11k: Recent Locations popover and the History window.
+cd /tmp/oneroot-ui-home/Documents
+cd /tmp/oneroot-ui-home/Pictures
+cd /tmp/oneroot-ui-home/Projects
+sleep 1
+key ctrl+alt+y
+sleep 1.5
+shot history
+type pict
+sleep 1
+shot filtered
+key Down
+key Return
+sleep 1.5
+shot opened

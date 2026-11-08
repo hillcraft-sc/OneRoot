@@ -1,0 +1,6 @@
+module CPopplerGLib [system] {
+    header "shim.h"
+    link "poppler-glib"
+    link "cairo"
+    export *
+}

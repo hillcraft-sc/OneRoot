@@ -1,0 +1,15 @@
+# L2: the default look, then the Settings dialog.
+cd /tmp/oneroot-ui-home
+shot default-look
+key ctrl+comma
+sleep 1
+shot settings-general
+click 630 72
+sleep 1
+shot settings-appearance
+click 766 72
+sleep 1
+shot settings-archives
+click 898 72
+sleep 1
+shot settings-terminal

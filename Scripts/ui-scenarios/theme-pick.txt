@@ -1,0 +1,12 @@
+# L2: choose Catppuccin Frappé (run, then run `theme-check` with --keep-home).
+key ctrl+comma
+sleep 1
+click 630 72
+sleep 1
+click 700 604
+sleep 1
+key Escape
+sleep 1
+
+key ctrl+q
+sleep 2

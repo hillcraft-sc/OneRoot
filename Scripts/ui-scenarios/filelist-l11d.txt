@@ -1,0 +1,16 @@
+# L11d: type-to-select, Esc deselect, Group by, context menu additions.
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+shot start
+click 520 178
+sleep 0.4
+key Escape
+sleep 0.4
+shot after-escape
+type r
+sleep 0.5
+shot typed-r
+rclick 520 178
+sleep 0.8
+shot context-menu
+key Escape

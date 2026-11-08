@@ -1,0 +1,9 @@
+# L10: a packaged install has no Updates group.
+env ONEROOT_INSTALL_METHOD=deb
+sleep 1
+key ctrl+comma
+sleep 1
+click 390 400
+sh xdotool click --repeat 25 --delay 40 5
+sleep 1
+shot no-updates-group

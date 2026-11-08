@@ -1,0 +1,15 @@
+# L11g: Show All Files in Subfolders.
+sh mkdir -p Projects/alpha/deep Projects/beta && echo a > Projects/alpha/a.txt && echo b > Projects/alpha/deep/b.txt && echo c > Projects/beta/c.md
+cd /tmp/oneroot-ui-home/Projects
+sleep 1
+shot before
+click 1346 108
+click 1220 410
+sleep 1.5
+shot flat
+click 1100 178
+sleep 0.5
+shot flat-selected
+click 1096 153
+sleep 1
+shot back

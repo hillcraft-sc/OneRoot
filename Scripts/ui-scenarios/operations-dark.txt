@@ -1,0 +1,11 @@
+# L1 look: the panel in a narrow dark window while a copy runs.
+env ONEROOT_TEST_COPY_DELAY_MS=1
+size 900 640
+sh mkdir -p Documents/many && cd Documents/many && head -c 40000000 /dev/zero | split -b 2000 -a 5 - f
+cd /tmp/oneroot-ui-home/Documents
+click 520 136
+key ctrl+c
+cd /tmp/oneroot-ui-home/Pictures
+key ctrl+v
+sleep 3
+shot narrow-dark

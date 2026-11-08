@@ -1,0 +1,17 @@
+# Combine into PDF: two images; reorder is in the sheet.
+cd /tmp/oneroot-ui-home/Pictures
+click 520 178
+key ctrl+a
+sleep 1
+click 315 108
+sleep 1
+shot menu
+key Down
+key Down
+key Down
+key Return
+sleep 2
+shot combine-sheet
+key Return
+sleep 4
+shot combined

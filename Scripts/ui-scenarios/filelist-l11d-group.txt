@@ -1,0 +1,15 @@
+# L11d: Group by menu.
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+click 1144 108
+sleep 0.8
+shot sort-menu
+click 1106 421
+sleep 1
+shot grouped-by-type
+click 520 178
+rclick 520 178
+sleep 0.8
+click 620 520
+sleep 0.8
+shot more-submenu

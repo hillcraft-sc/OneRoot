@@ -1,0 +1,14 @@
+# L8: three tabs (Documents, Projects split, Pictures), quit; then run `session-check` with --keep-home.
+cd /tmp/oneroot-ui-home/Documents
+key ctrl+t
+sleep 1
+cd /tmp/oneroot-ui-home/Projects
+key ctrl+backslash
+sleep 1
+key ctrl+t
+sleep 1
+cd /tmp/oneroot-ui-home/Pictures
+sleep 1
+shot before-quit
+key ctrl+q
+sleep 3

@@ -1,0 +1,18 @@
+# L11j: Get Info (opens the Inspector) and Eject with nothing to eject.
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+key ctrl+i
+sleep 0.8
+shot inspector-hidden
+click 520 178
+rclick 520 178
+sleep 0.8
+key Up
+key Right
+sleep 0.5
+key Return
+sleep 1.2
+shot get-info
+key ctrl+j
+sleep 0.8
+shot eject-toast

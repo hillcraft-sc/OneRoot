@@ -1,0 +1,21 @@
+# L1: copy a folder of 20,000 files with a slowed copy; pause, resume, cancel; then a failure.
+env ONEROOT_TEST_COPY_DELAY_MS=1
+sh mkdir -p Documents/many && cd Documents/many && head -c 40000000 /dev/zero | split -b 2000 -a 5 - f
+cd /tmp/oneroot-ui-home/Documents
+click 520 136
+key ctrl+c
+cd /tmp/oneroot-ui-home/Pictures
+key ctrl+v
+sleep 3
+shot copying
+# Pause (button right of the title), then resume.
+click 1328 568
+sleep 2
+shot paused
+click 1328 568
+sleep 2
+shot resumed
+# Cancel (the x at the far right of the title row).
+click 1366 568
+sleep 3
+shot cancelled

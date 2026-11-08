@@ -1,0 +1,23 @@
+# L11e: Quick Look follows the selection; Space closes it.
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+click 520 178
+key space
+sleep 1.2
+shot text
+key Escape
+sleep 0.6
+cd /tmp/oneroot-ui-home/Pictures
+sleep 1
+click 520 178
+key space
+sleep 1.5
+shot image
+key Escape
+sleep 0.6
+shot closed
+key space
+sleep 1
+click 900 210
+sleep 1.5
+shot follows

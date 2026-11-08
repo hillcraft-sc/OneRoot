@@ -1,0 +1,7 @@
+# L8: Recents from recently-used.xbel (a fresh file, an old one, a missing one).
+sh now=$(date -u +%FT%TZ); old=$(date -u -d '60 days ago' +%FT%TZ); printf '<?xml version="1.0"?>\n<xbel version="1.0">\n<bookmark href="file://%s/Documents/notes.txt" visited="%s"/>\n<bookmark href="file://%s/Documents/plan.md" visited="%s"/>\n<bookmark href="file://%s/Pictures/photo-blue.png" visited="%s"/>\n<bookmark href="file://%s/Documents/gone.txt" visited="%s"/>\n</xbel>\n' $HOME $now $HOME $old $HOME $now $HOME $now > $HOME/.local/share/recently-used.xbel
+sleep 1
+shot sidebar
+click 70 194
+sleep 2
+shot recents

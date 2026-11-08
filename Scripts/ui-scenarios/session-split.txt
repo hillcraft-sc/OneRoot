@@ -1,0 +1,5 @@
+# L8 diagnostic: a fresh split in the Projects tab.
+cd /tmp/oneroot-ui-home/Projects
+key ctrl+backslash
+sleep 1
+shot fresh-split

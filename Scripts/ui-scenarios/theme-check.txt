@@ -1,0 +1,2 @@
+# Second launch with the same home: is the theme remembered?
+shot after-restart

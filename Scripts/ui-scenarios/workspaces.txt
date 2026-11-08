@@ -1,0 +1,8 @@
+# L5: New Workspace editor, then the sidebar shows it.
+cd /tmp/oneroot-ui-home/Documents
+key ctrl+alt+n
+sleep 1
+shot editor
+key Return
+sleep 1
+shot created

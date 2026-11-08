@@ -1,0 +1,26 @@
+pkgbase = oneroot-bin
+	pkgdesc = A fast, native file manager with tabs, dual pane and a folder tree
+	pkgver = 0.2.0
+	pkgrel = 1
+	url = https://oneroot.hillcraft-sc.com
+	arch = x86_64
+	arch = aarch64
+	license = GPL-3.0-only
+	depends = gtk4
+	depends = libadwaita
+	depends = gtksourceview5
+	depends = qpdf
+	depends = poppler-glib
+	depends = libsecret
+	depends = libxml2-legacy
+	depends = curl
+	depends = libarchive
+	provides = oneroot
+	conflicts = oneroot
+	options = !strip
+	source_x86_64 = https://github.com/hillcraft-sc/OneRoot/releases/download/linux-v0.2.0/OneRoot-0.2.0-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 1af82c027bf07d166c83533f7f747c11d9a1d6a0324423cb36f948155e42e96a
+	source_aarch64 = https://github.com/hillcraft-sc/OneRoot/releases/download/linux-v0.2.0/OneRoot-0.2.0-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 4f360f27e4ed3a6ecaf83bc46eacd1245e1ad00bcf8b8c9ee56b38a7e81395d9
+
+pkgname = oneroot-bin

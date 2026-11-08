@@ -1,0 +1,15 @@
+# L4: mark all but oldest, Move to Trash, confirm; then Visualize Types.
+sh mkdir -p Documents/dups/sub && cd Documents/dups && head -c 50000 /dev/urandom > a.bin && cp a.bin b.bin && cp a.bin sub/c.bin && head -c 9000 /dev/urandom > d.dat && cp d.dat sub/e.dat
+cd /tmp/oneroot-ui-home/Documents/dups
+sleep 1
+key ctrl+shift+d
+sleep 3
+click 107 529
+sleep 1
+shot marked
+click 672 529
+sleep 1
+shot confirm
+key Return
+sleep 2
+shot trashed

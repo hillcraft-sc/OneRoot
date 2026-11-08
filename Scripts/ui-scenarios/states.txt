@@ -1,0 +1,25 @@
+# L9: empty, permission-denied, huge and vanishing folders.
+sh mkdir -p Empty Locked Big Vanish && echo secret > Locked/s.txt && chmod 000 Locked && echo x > Vanish/a.txt && (cd Big && seq 1 20000 | sed 's/^/file-/' | xargs touch) && ln -s /nonexistent Documents/broken-link
+cd /tmp/oneroot-ui-home/Empty
+shot empty
+cd /tmp/oneroot-ui-home/Locked
+sleep 1
+shot permission-denied
+key alt+Left
+cd /tmp/oneroot-ui-home/Big
+sleep 2
+shot big-top
+key ctrl+a
+sleep 1
+shot big-select-all
+key End
+sleep 1
+shot big-end
+cd /tmp/oneroot-ui-home/Vanish
+shot vanish-before
+sh rm -rf Vanish
+sleep 3
+shot vanish-after
+cd /tmp/oneroot-ui-home/Documents
+shot broken-link
+sh chmod 755 Locked

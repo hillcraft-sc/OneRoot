@@ -1,0 +1,15 @@
+# The Trash lives inside the real home folder (as on a normal desktop): the hierarchy must root at Trash.
+env XDG_DATA_HOME=/tmp/oneroot-ui-home/.local/share
+sh mkdir -p /tmp/oneroot-ui-home/.local/share/Trash/files /tmp/oneroot-ui-home/.local/share/Trash/info /tmp/oneroot-ui-home/Documents/deep && echo x > /tmp/oneroot-ui-home/.local/share/Trash/files/old.txt
+cd /tmp/oneroot-ui-home/Documents/deep
+sleep 1.5
+shot before
+click 62 612
+sleep 1.5
+shot trash
+click 62 156
+sleep 1.5
+shot home
+click 62 612
+sleep 1.5
+shot trash-again

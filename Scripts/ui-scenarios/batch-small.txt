@@ -1,0 +1,19 @@
+# Deselect All, icon-size slider, shortcut popover, Tools Panel.
+cd /tmp/oneroot-ui-home/Pictures
+sleep 1
+click 520 178
+sleep 0.6
+shot selected
+key ctrl+shift+a
+sleep 0.6
+shot deselected
+key ctrl+1
+sleep 1
+shot grid
+key ctrl+alt+b
+sleep 1
+shot tools-panel
+key ctrl+alt+b
+key ctrl+shift+slash
+sleep 1.5
+shot shortcuts

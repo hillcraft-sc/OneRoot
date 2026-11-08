@@ -1,0 +1,14 @@
+# L5: batch rename of the selection: preview, then apply.
+cd /tmp/oneroot-ui-home/Documents
+click 520 136
+key ctrl+a
+key F2
+sleep 1
+type o
+key Tab
+type 0
+sleep 1
+shot preview
+key Return
+sleep 2
+shot renamed

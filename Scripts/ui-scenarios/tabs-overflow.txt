@@ -1,0 +1,22 @@
+# Many tabs in a narrow window: overflow behavior, and drag-to-reorder.
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+size 760 700
+key ctrl+t
+key ctrl+t
+key ctrl+t
+key ctrl+t
+key ctrl+t
+key ctrl+t
+key ctrl+t
+key ctrl+t
+key ctrl+t
+key ctrl+t
+sleep 1.5
+shot ten-tabs
+key ctrl+shift+Tab
+key ctrl+shift+Tab
+sleep 0.5
+click 20 67
+sleep 1
+shot all-tabs

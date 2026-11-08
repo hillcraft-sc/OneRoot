@@ -1,0 +1,12 @@
+# Help window and the shortcut reference.
+cd /tmp/oneroot-ui-home/Documents
+key F1
+sleep 1.5
+shot help-start
+type rename
+sleep 1.5
+shot help-search
+key Escape
+key ctrl+shift+slash
+sleep 1.5
+shot help-shortcuts

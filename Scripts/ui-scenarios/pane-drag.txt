@@ -1,0 +1,11 @@
+# Drag one pane's header onto the other pane to swap sides.
+cd /tmp/oneroot-ui-home/Documents
+key ctrl+backslash
+sleep 1
+key ctrl+grave
+cd /tmp/oneroot-ui-home/Pictures
+sleep 1
+shot before
+drag 560 142 950 400 0.3
+sleep 1
+shot after

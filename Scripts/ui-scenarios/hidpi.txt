@@ -1,0 +1,11 @@
+# L9: 2x scale (GDK_SCALE=2); run with --size 2800x1800 so the window keeps its logical size.
+env GDK_SCALE=2
+cd /tmp/oneroot-ui-home/Pictures
+sleep 1
+shot hidpi-list
+click 900 360
+sleep 0.5
+shot hidpi-selected
+key ctrl+1
+sleep 1
+shot hidpi-grid

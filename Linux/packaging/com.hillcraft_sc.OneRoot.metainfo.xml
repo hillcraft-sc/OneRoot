@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.hillcraft_sc.OneRoot</id>
+  <name>OneRoot</name>
+  <summary>A fast, native file manager</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+  <developer id="com.hillcraft_sc"><name>Eric Hebert</name></developer>
+  <url type="homepage">https://oneroot.hillcraft-sc.com</url>
+  <url type="bugtracker">https://github.com/hillcraft-sc/OneRoot/issues</url>
+  <description>
+    <p>OneRoot is a fast file manager with tabs, a folder tree, dual pane, a live Inspector, filters and Advanced Search, and Undo for file operations.</p>
+    <p>This is a prototype (0.2.0). It has most of what OneRoot for macOS does, with some rough edges; a finished version is coming.</p>
+  </description>
+  <launchable type="desktop-id">com.hillcraft_sc.OneRoot.desktop</launchable>
+  <provides><binary>oneroot</binary></provides>
+  <categories><category>System</category><category>FileManager</category></categories>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.2.0" date="2026-11-06"/>
+    <release version="0.1.0" date="2026-11-06"/>
+  </releases>
+</component>

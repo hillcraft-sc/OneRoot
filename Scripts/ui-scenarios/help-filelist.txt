@@ -1,0 +1,8 @@
+cd /tmp/oneroot-ui-home/Documents
+key F1
+sleep 1.5
+type group
+sleep 1.5
+key Down
+sleep 1
+shot topic

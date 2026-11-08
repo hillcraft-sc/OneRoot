@@ -1,0 +1,7 @@
+# L8: Settings ▸ General (reopen session) and ▸ SSH (saved destinations).
+key ctrl+comma
+sleep 1
+shot general
+click 905 665
+sleep 1
+shot ssh-empty

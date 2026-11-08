@@ -1,0 +1,5 @@
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+drag 935 147 660 147 0.8
+sleep 1
+shot reordered

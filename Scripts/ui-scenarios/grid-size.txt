@@ -1,0 +1,6 @@
+cd /tmp/oneroot-ui-home/Pictures
+key ctrl+1
+sleep 1
+drag 1091 108 1160 108
+sleep 1
+shot bigger

@@ -1,0 +1,6 @@
+# L8: second launch with the same home: tabs, split and folders come back.
+sleep 2
+shot after-restart
+key ctrl+shift+Tab
+sleep 1
+shot previous-tab

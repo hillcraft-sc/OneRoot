@@ -1,0 +1,20 @@
+# Sidebar menu extras and Empty Trash (from the Trash folder's own menu).
+sh mkdir -p .local/share/Trash/files .local/share/Trash/info && echo x > .local/share/Trash/files/old.txt && echo y > .local/share/Trash/files/older.txt
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+rclick 62 156
+sleep 0.8
+shot home-menu
+key Escape
+cd /tmp/oneroot-ui-home/.local/share/Trash/files
+sleep 1
+rclick 800 500
+sleep 0.8
+shot trash-menu
+click 860 523
+sleep 1
+shot confirm
+click 700 388
+sleep 2
+shot emptied
+sh ls .local/share/Trash/files | wc -l

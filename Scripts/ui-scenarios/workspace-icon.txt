@@ -1,0 +1,12 @@
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+click 183 661
+sleep 1.2
+shot dialog
+click 612 301
+click 822 301
+sleep 0.4
+shot picked
+click 790 523
+sleep 1.5
+shot sidebar

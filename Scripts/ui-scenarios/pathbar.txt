@@ -1,0 +1,18 @@
+# L11c: crumb chevrons and menu, history menu, reload button.
+cd /tmp/oneroot-ui-home/Documents
+cd /tmp/oneroot-ui-home/Pictures
+sleep 1
+shot start
+click 541 27
+sleep 1
+shot subfolders
+click 597 191
+sleep 1
+shot after-subfolder
+rclick 112 27
+sleep 0.8
+shot back-history
+key Escape
+rclick 338 27
+sleep 0.8
+shot crumb-menu

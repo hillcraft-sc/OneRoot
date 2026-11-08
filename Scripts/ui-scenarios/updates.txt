@@ -1,0 +1,12 @@
+# L10: Settings > General > Updates (shown for a tarball install only).
+env ONEROOT_INSTALL_METHOD=tarball
+sleep 1
+key ctrl+comma
+sleep 1
+click 390 400
+sh xdotool click --repeat 25 --delay 40 5
+sleep 1
+shot updates-group
+click 898 592
+sleep 4
+shot after-check

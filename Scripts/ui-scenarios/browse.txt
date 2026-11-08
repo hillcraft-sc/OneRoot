@@ -1,0 +1,9 @@
+# Basic browsing: start, open a folder, a new tab, select a file.
+shot home
+cd /tmp/oneroot-ui-home/Documents
+shot documents
+key ctrl+t
+cd /tmp/oneroot-ui-home/Pictures
+shot second-tab
+key Down
+shot selected

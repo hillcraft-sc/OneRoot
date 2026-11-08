@@ -1,0 +1,7 @@
+module CPangoCairoPDF [system] {
+    header "shim.h"
+    link "pangocairo-1.0"
+    link "pango-1.0"
+    link "cairo"
+    export *
+}

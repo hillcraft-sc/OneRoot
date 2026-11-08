@@ -1,0 +1,20 @@
+# Text files: Convert to PDF and Text to Markdown.
+cd /tmp/oneroot-ui-home/Documents
+shot folder
+click 520 178
+sleep 1
+shot selected
+click 315 108
+sleep 1
+shot menu
+key Return
+sleep 2
+shot first-sheet
+key Escape
+sleep 1
+click 315 108
+sleep 1
+key Down
+key Return
+sleep 2
+shot second-sheet

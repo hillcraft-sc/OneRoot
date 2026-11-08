@@ -1,0 +1,21 @@
+# L11h: Collapse All Folders / Expand Top Level, Reset Window Layout.
+cd /tmp/oneroot-ui-home/Documents
+sleep 1.5
+click 262 295
+click 262 257
+sleep 1.5
+shot expanded
+key ctrl+minus
+sleep 1
+shot collapsed
+key ctrl+plus
+sleep 1.5
+shot top-level
+key ctrl+i
+key F9
+sleep 1
+shot panes-hidden
+click 1258 27
+click 1206 630
+sleep 1.5
+shot after-reset

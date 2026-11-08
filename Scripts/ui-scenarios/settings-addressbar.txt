@@ -1,0 +1,22 @@
+# Settings: Address bar style and the Editor page.
+cd /tmp/oneroot-ui-home/Documents
+key ctrl+comma
+sleep 1.5
+click 383 72
+type address bar
+sleep 1
+shot search
+click 690 146
+sleep 1
+shot found
+key Return
+sleep 0.6
+key Down
+key Return
+sleep 0.8
+shot chosen
+key Escape
+sleep 0.6
+key Escape
+sleep 0.8
+shot textfield

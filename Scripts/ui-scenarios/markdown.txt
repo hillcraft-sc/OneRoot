@@ -1,0 +1,10 @@
+# Inspector Markdown preview, raw and rendered.
+sh printf '# Hello\n\nSome **bold** and *italic* with `code`.\n\n- one\n- two\n\n> quoted\n\n[site](https://example.com)\n' > Documents/readme-test.md
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+click 520 306
+sleep 1.2
+shot raw
+click 1350 163
+sleep 0.8
+shot rendered

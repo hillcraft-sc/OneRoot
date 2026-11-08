@@ -1,0 +1,13 @@
+# Empty Trash with awkward contents: dangling link, folder tree, odd names, dotfile.
+sh mkdir -p .local/share/Trash/files/folder/sub .local/share/Trash/info && echo a > .local/share/Trash/files/folder/sub/x.txt && ln -s /nonexistent/target .local/share/Trash/files/dangling && echo b > ".local/share/Trash/files/sp ace é.txt" && echo c > .local/share/Trash/files/.hidden && printf '[Trash Info]\nPath=/tmp/gone\nDeletionDate=2026-01-01T00:00:00\n' > .local/share/Trash/info/dangling.trashinfo
+cd /tmp/oneroot-ui-home/.local/share/Trash/files
+sleep 1
+shot before
+rclick 800 500
+sleep 0.8
+click 860 523
+sleep 1
+click 700 388
+sleep 2
+shot after
+sh ls -A .local/share/Trash/files; echo ---; ls -A .local/share/Trash/info

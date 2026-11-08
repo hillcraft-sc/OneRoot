@@ -1,0 +1,14 @@
+# L8: Connect to Server with a wrong password: the error says so, nothing hangs.
+env ONEROOT_TRACE=1
+key ctrl+k
+sleep 2
+shot dialog
+type smb://localhost/oneroottest
+click 700 400
+type smbtest
+click 700 455
+type WRONGPW
+shot filled
+click 785 586
+sleep 10
+shot after-connect

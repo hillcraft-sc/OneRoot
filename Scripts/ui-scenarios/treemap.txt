@@ -1,0 +1,9 @@
+# L11l: Visualize treemap (Folders breakdown).
+sh mkdir -p Projects/big Projects/medium Projects/small && head -c 4000000 /dev/urandom > Projects/big/a.bin && head -c 1500000 /dev/urandom > Projects/medium/b.bin && head -c 300000 /dev/urandom > Projects/small/c.bin && head -c 900000 /dev/urandom > Projects/movie.mkv && head -c 120000 /dev/urandom > Projects/notes.pdf && head -c 20000 /dev/urandom > Projects/tiny.txt
+cd /tmp/oneroot-ui-home/Projects
+key ctrl+alt+v
+sleep 3
+shot treemap
+click 200 580
+sleep 1
+shot after-click

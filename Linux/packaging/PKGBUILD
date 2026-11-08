@@ -1,0 +1,28 @@
+# Maintainer: Eric Hebert <eric@hillcraft.email>
+# OneRoot for Linux, from the prebuilt release tarball (Scripts/release-linux.sh).
+# Licensed under GPL-3.0-only.
+pkgname=oneroot-bin
+pkgver=0.2.0
+pkgrel=1
+pkgdesc='A fast, native file manager with tabs, dual pane and a folder tree'
+arch=('x86_64' 'aarch64')
+url='https://oneroot.hillcraft-sc.com'
+license=('GPL-3.0-only')
+depends=('gtk4' 'libadwaita' 'gtksourceview5' 'libxml2-legacy' 'curl' 'libarchive' 'qpdf' 'libsecret' 'poppler-glib')
+provides=('oneroot')
+conflicts=('oneroot')
+options=('!strip')
+_rel="https://github.com/hillcraft-sc/OneRoot/releases/download/linux-v${pkgver}"
+source_x86_64=("${_rel}/OneRoot-${pkgver}-linux-x86_64.tar.gz")
+source_aarch64=("${_rel}/OneRoot-${pkgver}-linux-aarch64.tar.gz")
+sha256sums_x86_64=('1af82c027bf07d166c83533f7f747c11d9a1d6a0324423cb36f948155e42e96a')
+sha256sums_aarch64=('4f360f27e4ed3a6ecaf83bc46eacd1245e1ad00bcf8b8c9ee56b38a7e81395d9')
+
+package() {
+    cd "OneRoot-${pkgver}-linux-${CARCH}"
+    install -Dm755 oneroot "$pkgdir/usr/bin/oneroot"
+    install -Dm644 com.hillcraft_sc.OneRoot.desktop -t "$pkgdir/usr/share/applications"
+    install -Dm644 com.hillcraft_sc.OneRoot.metainfo.xml -t "$pkgdir/usr/share/metainfo"
+    install -Dm644 com.hillcraft_sc.OneRoot.png "$pkgdir/usr/share/icons/hicolor/256x256/apps/com.hillcraft_sc.OneRoot.png"
+    install -Dm644 LICENSE THIRD-PARTY-NOTICES.md -t "$pkgdir/usr/share/licenses/$pkgname"
+}

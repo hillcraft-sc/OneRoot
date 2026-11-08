@@ -1,0 +1,17 @@
+# L11m: Visualize stacked bar and group lists (Types, Age, Cloud).
+sh mkdir -p Projects/big Projects/medium && head -c 4000000 /dev/urandom > Projects/big/a.bin && head -c 1500000 /dev/urandom > Projects/medium/b.png && head -c 900000 /dev/urandom > Projects/movie.mkv && head -c 120000 /dev/urandom > Projects/notes.pdf && echo hi > Projects/readme.txt && touch -d '2 years ago' Projects/notes.pdf
+cd /tmp/oneroot-ui-home/Projects
+key ctrl+alt+v
+sleep 3
+click 198 445
+sleep 1.5
+shot types
+click 257 445
+sleep 1.5
+shot age
+click 198 445
+sleep 1
+shot cloud
+click 80 497
+sleep 1
+shot segment-click

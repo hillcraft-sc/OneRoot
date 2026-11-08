@@ -1,0 +1,15 @@
+# The Network window (sidebar Network row / Ctrl+Shift+K): address field, list, star; a bad address says so; Esc closes without warnings.
+sleep 1
+key ctrl+shift+k
+sleep 2.5
+shot window
+type notanaddress
+key Return
+sleep 0.8
+shot bad-address
+key Escape
+sleep 1
+key ctrl+shift+k
+sleep 1.5
+key Escape
+sleep 1

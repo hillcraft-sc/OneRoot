@@ -1,0 +1,14 @@
+# L8: Connect to Server against a local Samba share (user smbtest / secret1, share oneroottest; see docs/LINUX-DEV.md).
+env ONEROOT_TRACE=1
+key ctrl+k
+sleep 2
+shot dialog
+type smb://localhost/oneroottest
+click 700 400
+type smbtest
+click 700 455
+type secret1
+shot filled
+click 785 586
+sleep 8
+shot after-connect

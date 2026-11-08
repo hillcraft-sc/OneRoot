@@ -1,0 +1,25 @@
+# L11: tab commands and the tab context menu.
+cd /tmp/oneroot-ui-home/Documents
+key ctrl+t
+sleep 1
+cd /tmp/oneroot-ui-home/Pictures
+key ctrl+t
+sleep 1
+shot three-tabs
+key ctrl+Prior
+sleep 0.6
+shot previous-tab
+rclick 232 67
+sleep 0.8
+key Escape
+rclick 232 67
+sleep 0.8
+shot tab-menu2
+click 296 122
+sleep 1
+shot after-duplicate
+rclick 232 67
+sleep 0.6
+click 328 263
+sleep 1
+shot after-close-right

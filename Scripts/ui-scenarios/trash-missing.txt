@@ -1,0 +1,8 @@
+# A fresh account: the Trash folder doesn't exist yet. Clicking Trash must still show Trash (empty), not the home folder.
+env XDG_DATA_HOME=/tmp/oneroot-ui-home/.oneroot-test-data
+sh rm -rf /tmp/oneroot-ui-home/.oneroot-test-data
+cd /tmp/oneroot-ui-home
+sleep 1
+click 62 612
+sleep 1.5
+shot trash

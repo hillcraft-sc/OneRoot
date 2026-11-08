@@ -1,0 +1,14 @@
+# L9: narrow window with everything open, and a selection.
+cd /tmp/oneroot-ui-home/Pictures
+size 700 600
+sleep 1
+shot start
+click 600 28
+sleep 1
+shot inspector
+click 400 200
+sleep 0.5
+shot selected
+key ctrl+backslash
+sleep 1
+shot dual

@@ -1,0 +1,15 @@
+# Context Bar and Grid view.
+cd /tmp/oneroot-ui-home/Pictures
+shot list-nothing-selected
+click 520 178
+sleep 0.5
+shot list-selected
+key ctrl+c
+sleep 1.5
+shot paste-chip
+key ctrl+1
+sleep 1
+shot grid-selected
+key ctrl+2
+sleep 1
+shot list-again

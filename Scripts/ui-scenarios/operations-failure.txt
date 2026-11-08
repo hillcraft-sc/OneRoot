@@ -1,0 +1,9 @@
+# L1: a copy that fails (read-only destination) shows Retry; then Verify copies on another filesystem.
+sh mkdir -p Projects/locked && chmod 555 Projects/locked
+cd /tmp/oneroot-ui-home/Documents
+click 520 136
+key ctrl+c
+cd /tmp/oneroot-ui-home/Projects/locked
+key ctrl+v
+sleep 2
+shot failed

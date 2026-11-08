@@ -1,0 +1,17 @@
+# L11f: header menu, Columns dialog, drag to reorder.
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+rclick 933 147
+sleep 0.8
+shot header-menu
+key Escape
+drag 933 147 665 147
+sleep 1
+shot reordered
+click 1346 108
+sleep 0.8
+shot more-menu
+rclick 933 147
+click 985 298
+sleep 1
+shot hid-size

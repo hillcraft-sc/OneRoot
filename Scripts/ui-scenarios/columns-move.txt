@@ -1,0 +1,9 @@
+# L11f: Move Left / Move Right in the header menu (drag fallback).
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+rclick 760 147
+sleep 0.8
+shot menu
+click 816 202
+sleep 1
+shot moved

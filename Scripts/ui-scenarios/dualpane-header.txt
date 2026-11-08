@@ -1,0 +1,10 @@
+# L11b: pane headers, Compare button, Swap Panes shortcut.
+cd /tmp/oneroot-ui-home/Documents
+key ctrl+backslash
+sleep 1
+key ctrl+grave
+cd /tmp/oneroot-ui-home/Pictures
+shot dual
+key ctrl+shift+backslash
+sleep 0.8
+shot swapped

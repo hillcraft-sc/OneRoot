@@ -1,0 +1,10 @@
+# Grid view group headings: group by type, switch to Grid.
+cd /tmp/oneroot-ui-home/Documents
+sleep 1
+click 1144 108
+sleep 0.8
+click 1106 421
+sleep 1
+key ctrl+1
+sleep 1.5
+shot grid-grouped
