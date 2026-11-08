@@ -38,6 +38,14 @@ away when you need them:
 3. Open OneRoot. macOS asks once whether to open an app downloaded from the
    internet: click **Open**.
 
+Or, with [Homebrew](https://brew.sh):
+
+```
+brew install --cask hillcraft-sc/tap/oneroot
+```
+
+and update later with `brew upgrade --cask oneroot`. If Homebrew asks you to trust the tap, run `brew trust hillcraft-sc/tap` first.
+
 OneRoot is signed with Developer ID and notarized by Apple.
 
 On first launch OneRoot shows you how to give it **Full Disk Access**, which it

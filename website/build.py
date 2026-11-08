@@ -192,6 +192,7 @@ def home() -> str:
   <h1>Your files, under control.</h1>
   <p class="lede">OneRoot is a fast, native file manager for macOS. Browsing stays calm and familiar; the power tools are there the moment you need them.</p>
   <a class="button" href="{SITE['download_url']}">Download for Mac</a>
+  <p class="soon">Or with Homebrew: <code>brew install --cask hillcraft-sc/tap/oneroot</code></p>
   <p class="soon">Free and open source · macOS 14 or later · Apple silicon and Intel</p>
   <p class="soon">Looking for Linux? There's an early release (0.3.1) with most of the Mac features, still rough in places: <a href="https://github.com/hillcraft-sc/OneRoot/releases/tag/linux-v0.3.1">see the Linux release</a>.</p>
 </section>

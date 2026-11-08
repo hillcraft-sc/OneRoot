@@ -8,6 +8,14 @@
 2. Open it and drag **OneRoot** onto the **Applications** folder beside it.
 3. Open OneRoot from Applications. macOS asks once whether to open an app downloaded from the internet: click **Open**.
 
+Or, with [Homebrew](https://brew.sh):
+
+```
+brew install --cask hillcraft-sc/tap/oneroot
+```
+
+and update later with `brew upgrade --cask oneroot`. If Homebrew asks you to trust the tap, run `brew trust hillcraft-sc/tap` first.
+
 OneRoot is signed with Developer ID and notarized by Apple, so there's nothing else to approve. It needs macOS 14 Sonoma or later, on Apple silicon or Intel.
 
 ### Linux (early prototype)
@@ -25,7 +33,7 @@ You only do this once. Updates are signed the same way, so they keep the permiss
 
 ## Update
 
-Download the new DMG and drag OneRoot to Applications again, replacing the old copy. Your settings, tabs, pinned folders and Workspaces stay as they were.
+Download the new DMG and drag OneRoot to Applications again, replacing the old copy (or, if you installed with Homebrew, run `brew upgrade --cask oneroot`). Your settings, tabs, pinned folders and Workspaces stay as they were.
 
 ## Learn your way around
 

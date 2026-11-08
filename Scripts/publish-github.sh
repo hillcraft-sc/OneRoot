@@ -31,3 +31,4 @@ else
         --repo "$REPO" --title "OneRoot $VERSION" --notes-file "$NOTES"
 fi
 echo "✓ https://github.com/$REPO/releases/tag/v$VERSION"
+echo "Next: Scripts/update-homebrew-cask.sh $VERSION"
