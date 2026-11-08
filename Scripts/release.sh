@@ -61,6 +61,7 @@ echo "▸ Making the disk image"
 mkdir "$WORK/dmg"
 ditto "$APP" "$WORK/dmg/OneRoot.app"
 ln -s /Applications "$WORK/dmg/Applications"
+cp "$ROOT/LICENSE" "$WORK/dmg/LICENSE.txt"
 hdiutil create -volname "OneRoot $VERSION" -srcfolder "$WORK/dmg" -fs HFS+ -format UDZO -quiet "$DMG"
 codesign --sign "Developer ID Application" --timestamp "$DMG"
 

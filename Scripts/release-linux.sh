@@ -26,9 +26,12 @@ STAGE=/tmp/$NAME
 
 echo "▸ Building in $MACHINE ($ARCH)"
 LC_ALL=C orb -m $MACHINE bash -lc ". ~/.local/share/swiftly/env.sh
-set -e
+set -eo pipefail
 cd '$ROOT/Linux'
-swift build -c release --static-swift-stdlib ${SWIFT_BUILD_EXTRA:-} --scratch-path /tmp/oneroot-linux-release 2>&1 | sed 's/\x1b\[[0-9;]*m//g' | grep -E 'error:|Build complete'
+# Never package a stale binary from an earlier build: remove it, then require a fresh one.
+rm -f /tmp/oneroot-linux-release/release/OneRootLinux
+swift build -c release --static-swift-stdlib ${SWIFT_BUILD_EXTRA:-} --scratch-path /tmp/oneroot-linux-release 2>&1 | sed 's/\x1b\[[0-9;]*m//g' | grep -E 'error:|Build complete' || true
+[ -x /tmp/oneroot-linux-release/release/OneRootLinux ] || { echo 'Build failed: no binary, nothing packaged.'; exit 1; }
 rm -rf '$STAGE'; mkdir -p '$STAGE'
 install -m755 /tmp/oneroot-linux-release/release/OneRootLinux '$STAGE/oneroot'
 strip '$STAGE/oneroot'

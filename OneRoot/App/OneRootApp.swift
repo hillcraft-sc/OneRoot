@@ -107,6 +107,8 @@ struct OneRootApp: App {
 
         Built with SwiftUI and AppKit, system frameworks only \u{2014} no third-party dependencies. \
         Signed with Developer ID and notarized by Apple.
+
+        Free software under the GNU GPL v3. Source: github.com/hillcraft-sc/OneRoot
         """)
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center

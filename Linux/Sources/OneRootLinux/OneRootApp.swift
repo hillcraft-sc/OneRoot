@@ -353,7 +353,7 @@ final class OneRootApp {
 }
 
 enum AppVersion {
-    static let current = "0.2.0"
+    static let current = "0.3.1"
 }
 
 /// ONEROOT_TRACE=1: notes to standard error, for debugging.

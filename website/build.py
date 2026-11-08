@@ -192,13 +192,13 @@ def home() -> str:
   <h1>Your files, under control.</h1>
   <p class="lede">OneRoot is a fast, native file manager for macOS. Browsing stays calm and familiar; the power tools are there the moment you need them.</p>
   <a class="button" href="{SITE['download_url']}">Download for Mac</a>
-  <p class="soon">Free for personal use · macOS 14 or later · Apple silicon and Intel</p>
-  <p class="soon">Looking for Linux? There's an early release (0.2.0) with most of the Mac features, still rough in places: <a href="https://github.com/hillcraft-sc/OneRoot/releases/tag/linux-v0.2.0">see the Linux release</a>.</p>
+  <p class="soon">Free and open source · macOS 14 or later · Apple silicon and Intel</p>
+  <p class="soon">Looking for Linux? There's an early release (0.3.1) with most of the Mac features, still rough in places: <a href="https://github.com/hillcraft-sc/OneRoot/releases/tag/linux-v0.3.1">see the Linux release</a>.</p>
 </section>
 <section class="features">{cards}</section>
 <section class="more">
   <p>OneRoot is signed by its developer and notarized by Apple. See <a href="/support.html">Support</a> for installing it and giving it Full Disk Access, and <a href="/privacy.html">Privacy</a> for what it keeps and where.</p>
-  <p>OneRoot is free for personal and other noncommercial use. If you enjoy it, you can {tip_link("leave a tip on Ko-fi")}.</p>
+  <p>OneRoot is free software (<a href="https://github.com/hillcraft-sc/OneRoot">source on GitHub</a>). If you enjoy it, you can {tip_link("leave a tip on Ko-fi")}.</p>
 </section>"""
     return page("home", "Home", body, "OneRoot: a fast, native file manager for macOS, with tabs, a folder tree, an Inspector, Dual Pane, Workspaces, search, and file operations you can undo.")
 
