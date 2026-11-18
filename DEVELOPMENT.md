@@ -1905,8 +1905,8 @@ data. The earlier looks remain as options.
   **OneRoot ▸ Check for Updates…** any time; the **Software Update** window
   (`UpdateView`) shows the notes, Download (the disk image, in the
   browser), Later, and Skip This Version. Nothing is downloaded or
-  installed by OneRoot. Not during unit tests. `docs/PRIVACY.md` now
-  describes the request. Tests: `UpdateCheckerTests` (no network).
+  installed by OneRoot. Not during unit tests. the Privacy page
+  (oneroot.hillcraft-sc.com/privacy) describes the request. Tests: `UpdateCheckerTests` (no network).
 
 ### Duplicate (⌘D)
 
