@@ -8,6 +8,8 @@
 
 ---
 
+<p align="center"><img src="Public/screenshots/oneroot-list-inspector.png" alt="OneRoot showing a folder with the folder tree, file list, Inspector preview and storage view"></p>
+
 OneRoot keeps browsing calm and familiar, and puts the power tools one click
 away when you need them:
 
@@ -30,6 +32,8 @@ away when you need them:
 - **Visualize** what's using your storage
 - Network shares, external drives, iCloud Drive and other cloud folders
 - Light and dark themes, and a searchable built-in Help
+
+<p align="center"><img src="Public/screenshots/oneroot-grid-preview.png" alt="The same folder as an icon grid with image thumbnails"></p>
 
 ## Install on macOS
 
