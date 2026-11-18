@@ -103,6 +103,12 @@ Files listed in `Package.swift` (OneRootCore) also build on Linux: Foundation al
 
 ---
 
+## 4. The website
+
+OneRoot's website (home, Support and Privacy pages) is not in this repo. It lives in the separate `hillcraft-site` repo, in its `oneroot/` folder, with the other Hillcraft sites. Do not add website code or the Support and Privacy text here: link the published pages (oneroot.hillcraft-sc.com/support and /privacy) instead of copying them into `docs/`.
+
+---
+
 ## 5. Product vision
 
 Moved to `docs/UX-DIRECTION.md` (§5). Read it before work in this area.
